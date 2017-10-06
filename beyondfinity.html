@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Beyondfinity Engineering</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+body {
+margin:0;
+}
+.top {
+  overflow: hidden;
+  background-color: black;
+  position: sticky;
+  top: 0;
+  border: 1px solid black;
+}
+.top a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.top a:hover {
+  background-color: lightgrey;
+  color: black;
+}
+h1{
+text-align: center;
+text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+color: red;
+}
+img{
+postion: absolute;
+top-right: -30px;
+}
+footer {
+    padding: 1em;
+    color: white;
+    background-color: black;
+    clear: left;
+    text-align: center;
+	   }
+</style>
+</head>
+<body>
+	<div class="top">
+	  <a class="active" href="beyondfinity.html">Home</a>
+	  <a href="about.html">About us</a>
+	  <a href="services.html">Services</a>
+	  <a href="contact.html">Contact</a>
+	</div>
+		<h1>Beyondfinity Engineering</h1>
+	<div style="width: 900px; margin-left: auto; margin-right: auto;padding: 290px;margin-top: -270px;">
+		<img src="http://www.beyondfinity.com/logo.png" alt="beyondfinity.com" align="center">
+	</div>
+<div style="margin-left: 1150px;margin-top: -300px;">
+	<form>
+	  <input type="text" name="search" placeholder="Search..">
+	</form>
+</div>
+<br>
+	<section>
+	  <img class="mySlides" src="https://i.cbc.ca/1.4138740.1496185250!/fileImage/httpImage/image.jpg_gen/derivatives/original_620/smart-phone-smart-technology.jpg"
+	  style="width:100%">
+	  <img class="mySlides" src="http://pcshouters.com/wp-content/uploads/2017/01/Advancement-in-Technology.jpg"
+	  style="width:100%">
+	  <img class="mySlides" src="http://irpp.org/wp-content/uploads/2016/03/technology.jpg"
+	  style="width:100%">
+	</section>
+	<script>
+	var myIndex = 0;
+	carousel();
+
+	function carousel() {
+		var i;
+		var x = document.getElementsByClassName("mySlides");
+		for (i = 0; i < x.length; i++) {
+		   x[i].style.display = "none";
+		}
+		myIndex++;
+		if (myIndex > x.length) {myIndex = 1}
+		x[myIndex-1].style.display = "block";
+		setTimeout(carousel, 3000);
+	}
+	</script>
+<footer>Copyright &copy; BeyondfinityEngineering.com</footer>
+</body>
+</html> 
